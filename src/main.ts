@@ -1,5 +1,6 @@
-function areaDelCuadrado (lado : number) : number {
-    return lado * lado;
-}
+import { agregarEventoBotonIniciarPartida, crearTablero } from "./ui";
 
-console.log(areaDelCuadrado(10));
+document.addEventListener("DOMContentLoaded", () =>{
+    crearTablero();
+    agregarEventoBotonIniciarPartida();
+});
